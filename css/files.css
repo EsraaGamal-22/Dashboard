@@ -1,0 +1,107 @@
+@media (max-width: 767px) {
+  .files-container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper {
+    width: 60%;
+  }
+}
+@media (min-width: 1280px) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    width: 70%;
+  }
+}
+
+.files-statistics {
+  height: 90%;
+  padding: 10px 20px;
+}
+@media (min-width: 768px) {
+  .files-statistics {
+    width: 44%;
+  }
+}
+@media (min-width: 1024px) {
+  .files-statistics {
+    width: 30%;
+  }
+}
+@media (min-width: 1280px) {
+  .files-statistics {
+    width: 25%;
+  }
+}
+
+.image-information {
+  text-align: center;
+}
+.image-information img {
+  width: 55px;
+  height: 55px;
+  transition: 0.3s;
+}
+.image-information img:hover {
+  transform: rotate(5deg);
+}
+
+.file-archive {
+  border: 1px solid #eee;
+}
+
+.icon-file {
+  width: 35px;
+  height: 35px;
+}
+
+.pdf {
+  background-color: hsla(212, 100%, 50%, 0.2);
+}
+
+.gallery {
+  background-color: hsla(142, 71%, 45%, 0.2);
+}
+
+.word {
+  background-color: hsla(4, 90%, 58%, 0.3);
+}
+
+.csv {
+  background-color: hsla(37, 92%, 51%, 0.3);
+}
+
+.upload-btn {
+  margin: 20px auto;
+  padding: 10px 20px;
+}
+.upload-btn:hover {
+  cursor: pointer;
+  background-color: #0d69d5;
+}
+.upload-btn:hover i {
+  animation: upNdown 2s infinite;
+  animation-duration: 0.7s;
+}
+
+@keyframes upNdown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=files.css.map */

@@ -1,0 +1,158 @@
+$blue-color: #0075ff;
+$blue-alt-color: #0d69d5;
+$orange-color: #f59e0f;
+$green-color: #22c55e;
+$red-color: #f44336;
+$grey-color: #888;
+.wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+/* start profile-info*/
+.profile-container {
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+.profile-info {
+  grid-column: span 3;
+  @media (max-width: 760px) {
+    grid-column: span 1;
+  }
+}
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.bar,
+.progress {
+  border-radius: 15px;
+}
+.bar {
+  width: 150px;
+  height: 5px;
+  position: relative;
+}
+.progress {
+  position: absolute;
+  left: 0;
+  width: 75%;
+  height: 100%;
+}
+.toggle-checkbox {
+  --webkit-appearance: none;
+  appearance: none;
+}
+.toggle-switch {
+  background-color: #ccc;
+  width: 80px;
+  height: 20px;
+  border-radius: 16px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+  @media (max-width: 760px) {
+    margin: auto;
+  }
+  &::before {
+    // to put the shape of x to toggle
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    font-size: 8px;
+    background-color: white;
+    width: 12px;
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    transition: 0.3s;
+  }
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: $blue-color;
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c"; // refer to checked icon
+  left: 65px;
+  color: $blue-color;
+}
+.line {
+  width: 1px;
+  height: 320px;
+  margin: auto;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+.full-information {
+  flex: 1;
+  @media (max-width: 760px) {
+    text-align: center;
+  }
+}
+.info-container {
+  &:hover {
+    background-color: hsl(0, 0%, 93%, 0.4);
+  }
+}
+.information {
+  align-items: flex-start;
+  @media (max-width: 1000px) {
+    display: block;
+  }
+}
+/* end profile-info*/
+/*start my skill*/
+.my-skill {
+  grid-column: span 1;
+}
+.skills {
+  padding: 15px 0;
+  @media (max-width: 600px) {
+    text-align: center;
+  }
+}
+/*end my skill*/
+/*start activites*/
+.latest-activites {
+  grid-column: span 2;
+  @media (max-width: 600px) {
+    text-align: center;
+  }
+  @media (max-width: 1000px) {
+    grid-column: span 1;
+  
+  }
+
+}
+.activity-row{
+  @media (max-width:600px)
+  {
+    display: block;
+  }
+}
+.activity-details{
+  @media (max-width:600px)
+  {
+    display: block;
+  }
+  img{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+  }
+}
+/*end activites*/

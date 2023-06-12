@@ -1,0 +1,217 @@
+/*start site control*/
+.toggle-checkbox {
+  --webkit-appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.toggle-switch {
+  background-color: #ccc;
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.toggle-switch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  font-weight: 900;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: #0075ff;
+}
+
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c";
+  left: 50px;
+  color: #0075ff;
+}
+
+.message {
+  height: 150px;
+}
+
+/*end site control*/
+/*start general info*/
+.general-info input[type=text] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.email:hover {
+  cursor: no-drop;
+}
+
+.change {
+  margin-left: 10px;
+}
+.change:hover {
+  cursor: pointer;
+}
+
+/*end general info*/
+/*start Security Info*/
+.btn-change {
+  color: white;
+}
+.btn-change:hover {
+  background-color: #0d69d5;
+  cursor: pointer;
+}
+
+/*end Security Info*/
+/*start social Info*/
+.social-info input {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  flex: 1;
+  transition: 0.3s;
+}
+.social-info input:focus + .social-input-icon {
+  color: black;
+}
+
+.social-details {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.social-input-icon {
+  border-right: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+/*end social info*/
+/*start Widgets Control*/
+.widgets-container label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.widgets-container label::before, .widgets-container label::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.widgets-container label::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 2px solid #888;
+  margin-top: -7px;
+}
+.widgets-container label::after {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  font-weight: 900;
+  margin-top: -7px;
+  color: white;
+  background-color: #0075ff;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  transform: scale(0) rotate(360deg);
+  transition: 0.3s;
+}
+
+.control-input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+.control-input[type=checkbox]:checked + label::after {
+  transform: scale(1);
+}
+.control-input[type=checkbox] + label:hover::before {
+  border-color: #0075ff;
+}
+
+/*end Widgets Control*/
+/**start Backup Manager*/
+.backup-container input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+.backup-container input[type=radio]:checked + label::before {
+  border-color: #0075ff;
+}
+.backup-container input[type=radio]:checked + label::after {
+  transform: scale(1);
+}
+.backup-container label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+}
+.backup-container label::before, .backup-container label::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.backup-container label::before {
+  content: "";
+  border: 2px solid #888;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -12px;
+}
+.backup-container label::after {
+  content: "";
+  top: 4px;
+  left: 5px;
+  color: white;
+  background-color: #0075ff;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  font-size: 12px;
+  transform: scale(0);
+  transition: 0.3s;
+}
+
+@media (max-width: 780px) {
+  .manager-container {
+    display: block;
+  }
+}
+.manager-container input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+.manager-container input[type=radio]:checked + .manager-details {
+  border-color: #0075ff;
+  color: #0075ff;
+}
+
+.manager-details {
+  border-radius: 10px;
+  padding: 10px 34px;
+}
+.manager-details label {
+  cursor: pointer;
+}/*# sourceMappingURL=setting.css.map */

@@ -1,0 +1,220 @@
+$blue-color: #0075ff;
+$blue-alt-color: #0d69d5;
+$orange-color: #f59e0f;
+$green-color: #22c55e;
+$red-color: #f44336;
+$grey-color: #888;
+/*start site control*/
+.toggle-checkbox {
+  --webkit-appearance: none;
+  appearance: none;
+}
+.toggle-switch {
+  background-color: #ccc;
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+  &::before {
+    // to put the shape of x to toggle
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d"; // refer to x shape
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    transition: 0.3s;
+  }
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: $blue-color;
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c"; // refer to checked icon
+  left: 50px;
+  color: $blue-color;
+}
+.message {
+  height: 150px;
+}
+/*end site control*/
+/*start general info*/
+.general-info {
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+}
+.email:hover {
+  cursor: no-drop;
+}
+.change {
+  margin-left: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+/*end general info*/
+/*start Security Info*/
+.btn-change {
+  color: white;
+  &:hover {
+    background-color: $blue-alt-color;
+    cursor: pointer;
+  }
+}
+/*end Security Info*/
+/*start social Info*/
+.social-info {
+  input {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    flex: 1;
+    transition: 0.3s;
+    &:focus + .social-input-icon {
+      color: black;
+    }
+  }
+}
+.social-details {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.social-input-icon {
+  border-right: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+/*end social info*/
+/*start Widgets Control*/
+.widgets-container {
+  label {
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+    &::before,
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 50%;
+    }
+    &::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      border: 2px solid $grey-color;
+      margin-top: -7px;
+    }
+
+    &::after {
+      font-family: var(--fa-style-family-classic);
+      content: "\f00c";
+      font-weight: 900;
+      margin-top: -7px;
+      color: white;
+      background-color: $blue-color;
+      width: 18px;
+      height: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      transform: scale(0) rotate(360deg);
+      transition: 0.3s;
+    }
+  }
+}
+.control-input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  &:checked + label::after {
+    transform: scale(1);
+  }
+  & + label:hover::before {
+    border-color: $blue-color;
+  }
+}
+
+/*end Widgets Control*/
+/**start Backup Manager*/
+.backup-container {
+  input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    &:checked + label::before {
+      border-color: $blue-color;
+    }
+    &:checked + label::after {
+      transform: scale(1);
+    }
+  }
+  label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+    &::before,
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 50%;
+    }
+    &::before {
+      content: "";
+      border: 2px solid $grey-color;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      margin-top: -12px;
+    }
+    &::after {
+      content: "";
+      top: 4px;
+      left: 5px;
+      color: white;
+      background-color: $blue-color;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      font-size: 12px;
+      transform: scale(0);
+      transition: 0.3s;
+    }
+  }
+}
+
+.manager-container {
+  @media (max-width: 780px) {
+    display: block;
+  }
+  input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    &:checked + .manager-details {
+      border-color: $blue-color;
+      color: $blue-color;
+    }
+  }
+  
+}
+.manager-details {
+  border-radius: 10px;
+  padding: 10px 34px;
+  label {
+    cursor: pointer;
+  }
+ 
+}

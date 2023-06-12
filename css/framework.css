@@ -1,0 +1,392 @@
+/* start box*/
+.d-flex {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.d-block {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .block-mobile {
+    display: block;
+  }
+}
+
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*end box*/
+/*start padding+margin*/
+.p-0 {
+  padding: 0;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pt-10 {
+  padding-top: 20px;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.p-cell {
+  padding: 15px 10px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-3 {
+  margin-top: 3px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-23 {
+  margin-bottom: 23px;
+}
+
+.ml-3 {
+  margin-left: 3px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+/*end padding+margin*/
+/*start color*/
+.bg-white {
+  background-color: white;
+}
+
+.bg-eee {
+  background-color: #eee;
+}
+
+.bg-blue {
+  background-color: #0075ff;
+}
+
+.bg-alt-blue {
+  background-color: #0d69d5;
+}
+
+.bg-orange {
+  background-color: #f59e0f;
+}
+
+.bg-green {
+  background-color: #22c55e;
+}
+
+.bg-red {
+  background-color: #f44336;
+}
+
+.bg-youtube {
+  background-color: #ff0000;
+}
+
+.bg-twitter {
+  background-color: #1da1f2;
+}
+
+.c-black {
+  color: black;
+}
+
+.c-grey {
+  color: #888;
+}
+
+.c-red {
+  color: #f44336;
+}
+
+.c-grey-op-8 {
+  color: hsla(0, 0%, 50%, 0.8);
+}
+
+.c-grey-op-4 {
+  color: hsla(0, 0%, 50%, 0.4);
+}
+
+.c-white {
+  color: white;
+}
+
+.c-blue {
+  color: #0075ff;
+}
+
+.c-orange {
+  color: #f59e0f;
+}
+
+.c-green {
+  color: #22c55e;
+}
+
+.blue-color {
+  background-color: rgba(0, 117, 255, 0.2);
+}
+
+.c-twitter {
+  color: #1da1f2;
+}
+
+.c-icon {
+  background-color: hsla(203, 89%, 53%, 0.2);
+}
+
+.c-icon-youtube {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.c-youtube {
+  color: #ff0000;
+}
+
+.c-alt-blue {
+  color: #0d69d5;
+}
+
+.icon-blue {
+  color: #0d69d5;
+}
+
+.icon-orange {
+  color: #f59e0f;
+}
+
+.orange-color {
+  background-color: rgba(255, 165, 0, 0.2);
+}
+
+.icon-green {
+  color: #22c55e;
+}
+
+.green-color {
+  background-color: rgba(0, 128, 0, 0.2);
+}
+
+.red-color {
+  color: #f44336;
+}
+
+/*end color */
+/*start position*/
+.p-relative {
+  position: relative;
+}
+
+/*end position*/
+/*start font */
+.txt-c {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .txt-c-mobile {
+    text-align: center;
+  }
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.l-through {
+  text-decoration-line: line-through;
+}
+
+/*end font*/
+/* start border*/
+.rad-3 {
+  border-radius: 3px;
+}
+
+.rad-6 {
+  border-radius: 6px;
+}
+
+.rad-10 {
+  border-radius: 10px;
+}
+
+.rad-50 {
+  border-radius: 50%;
+}
+
+.b-none {
+  border: none;
+}
+
+.b-bottom {
+  border-bottom: 1px solid #eee;
+}
+
+.b-table {
+  border: 1px solid #eee;
+}
+
+.b-input {
+  border: 1px solid hsla(0, 1%, 44%, 0.3);
+}
+
+/* end border*/
+/*start width*/
+.w-full {
+  width: 100%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/*end width*/
+/*start components*/
+.between-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-shape {
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.line {
+  width: 2px;
+}
+
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+/*end components*//*# sourceMappingURL=framework.css.map */

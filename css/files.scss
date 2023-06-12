@@ -1,0 +1,101 @@
+$blue-color: #0075ff;
+$blue-alt-color: #0d69d5;
+$orange-color: #f59e0f;
+$green-color: #22c55e;
+$red-color: #f44336;
+$grey-color: #888;
+.files-container {
+  
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+}
+
+.wrapper {
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    width: 45%;
+  }
+  @media (min-width: 1024px) {
+    width:60%;
+  }
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    width: 70%;
+  }
+}
+
+.files-statistics {
+  height:90%;
+  padding:10px 20px;
+  
+  @media (min-width: 768px) {
+    width: 44%;
+  }
+  @media (min-width: 1024px) {
+    width:30%;
+  }
+  @media (min-width: 1280px) {
+   
+    width: 25%;
+  }
+}
+.image-information {
+  text-align: center;
+  img {
+    width: 55px;
+    height: 55px;
+    transition: 0.3s;
+    &:hover {
+      transform: rotate(5deg);
+      
+    }
+  }
+}
+.file-archive{
+  border:1px solid #eee;
+}
+.icon-file{
+  width:35px;
+  height:35px;
+ 
+}
+.pdf{
+  background-color: hsl(212deg 100% 50% / 20%);
+}
+.gallery{
+  background-color: hsl(142deg 71% 45% / 20%);
+}
+.word{
+  background-color: hsl(4deg 90% 58% / 30%);
+}
+.csv{
+  background-color: hsl(37deg 92% 51% / 30%);
+}
+.upload-btn{
+  margin:20px auto;
+  padding: 10px 20px;
+  
+  &:hover{
+    cursor: pointer;
+    background-color: $blue-alt-color;
+    & i{
+      animation: upNdown 2s infinite;
+      animation-duration: 0.7s;
+    }
+
+  }
+}
+@keyframes upNdown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

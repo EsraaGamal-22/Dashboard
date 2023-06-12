@@ -1,0 +1,36 @@
+$blue-color: #0075ff;
+$blue-alt-color: #0d69d5;
+$orange-color: #f59e0f;
+$green-color: #22c55e;
+$red-color: #f44336;
+$grey-color: #888;
+.wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    
+  }
+.contact-info{
+    i{
+        &:hover{
+            cursor: pointer;
+            color: white;
+            background-color:$blue-color;
+        }
+    }
+}
+.contact-details{
+    text-align: center;
+    img{
+        width:100px;
+        height: 100px;
+    }
+}
+.vip-img{
+    width:70px;
+    height:70px;
+    opacity: 0.2;
+}
+.btn-friend{
+    &:hover{
+        cursor: pointer;
+    }
+}

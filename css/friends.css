@@ -1,0 +1,27 @@
+.wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.contact-info i:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #0075ff;
+}
+
+.contact-details {
+  text-align: center;
+}
+.contact-details img {
+  width: 100px;
+  height: 100px;
+}
+
+.vip-img {
+  width: 70px;
+  height: 70px;
+  opacity: 0.2;
+}
+
+.btn-friend:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=friends.css.map */

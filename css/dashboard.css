@@ -1,0 +1,371 @@
+.welcome {
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .welcome .intro {
+    padding-bottom: 30px;
+  }
+}
+.welcome .intro .img-welcome {
+  width: 30%;
+  height: 30%;
+  margin-bottom: -10px;
+}
+@media (max-width: 767px) {
+  .welcome .intro .img-welcome {
+    display: none;
+  }
+}
+.welcome .avatar {
+  width: 64px;
+  height: 64px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 2px;
+  box-shadow: 0 0 5px #ddd;
+  margin-left: 20px;
+  margin-top: -32px;
+}
+@media (max-width: 767px) {
+  .welcome .avatar {
+    margin-left: 0;
+  }
+}
+.welcome .body {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.welcome .body > div {
+  flex: 1;
+}
+.welcome .body > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+.welcome .visit {
+  margin: 0 15px 15px auto;
+  transition: 0.3s;
+}
+.welcome .visit:hover {
+  background-color: var(--blue-alt-color);
+}
+
+.quick-draft textarea {
+  resize: none;
+  min-height: 180px;
+}
+.quick-draft .save {
+  margin-left: auto;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+
+.details {
+  flex: 1;
+}
+.details .progress {
+  height: 4px;
+}
+.details .progress > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.details .progress > span span {
+  position: absolute;
+  bottom: 15px;
+  right: -16px;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.details .progress > span span::after {
+  content: "";
+  border-width: 5px;
+  border-color: transparent;
+  border-style: solid;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.details .progress .shape1::after {
+  border-top-color: var(--blue-alt-color);
+}
+.details .progress .shape2::after {
+  border-top-color: var(--orange-color);
+}
+.details .progress .shape3::after {
+  border-top-color: var(--green-color);
+}
+
+/*start Tickets Statistics*/
+.statistics-container {
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+}
+.statistics-container .statistics-details {
+  border: 1px solid #ccc;
+  padding: 22px 18px;
+}
+
+/*end Tickets Statistics*/
+/*start Latest News*/
+@media (max-width: 767px) {
+  .news-details {
+    display: block;
+    text-align: center;
+  }
+}
+
+.news-section {
+  flex: 1;
+}
+@media (max-width: 767px) {
+  .news-section {
+    display: block;
+  }
+}
+
+.img-sec {
+  width: 85px;
+  height: 50px;
+}
+@media (max-width: 767px) {
+  .img-sec {
+    margin: auto;
+  }
+}
+.img-sec img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .days {
+    margin: 10px auto 0;
+    width: 33%;
+  }
+}
+
+/*end Latest News*/
+/*start Latest Tasks*/
+.task-info {
+  flex: 1;
+}
+
+.delete {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.delete:hover {
+  color: #f44336;
+}
+
+.op:hover {
+  color: hsla(0, 100%, 50%, 0.3);
+}
+
+/*end Latest Tasks*/
+/*start Latest Uploads*/
+.upload-img {
+  width: 40px;
+  height: 40px;
+}
+.upload-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/*end Latest Uploads*/
+/*start Last Project Progress*/
+.last-progress {
+  position: relative;
+}
+
+.circle {
+  position: relative;
+  border: 3px solid #0075ff;
+  width: 30px;
+  height: 30px;
+}
+
+.circle-closed {
+  border: 2px solid #0075ff;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #0075ff;
+  top: 2px;
+  left: 2px;
+}
+
+.moved {
+  animation-name: change-opacity;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change-opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.line-height {
+  height: 13px;
+}
+
+.progress-info {
+  flex: 1;
+}
+
+.image-rocket {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
+.image-rocket img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+/*end Last Project Progress*/
+/*start Reminders*/
+.circle-reminder {
+  width: 20px;
+  height: 20px;
+}
+
+.line-separate {
+  height: 40px;
+}
+
+.reminder-info {
+  flex: 1;
+}
+
+/*end Reminders*/
+/*start Latest Post*/
+.image-post {
+  width: 50px;
+  height: 50px;
+}
+.image-post img {
+  width: 100%;
+  height: 100%;
+}
+
+/*end Latest Post*/
+/*start Social Media Stats*/
+.social-icon {
+  width: 55px;
+  height: 55px;
+  transition: 0.3s;
+}
+.social-icon:hover {
+  transform: rotate(5deg);
+}
+
+.followers-number {
+  flex: 1;
+}
+
+.btn-social {
+  cursor: pointer;
+}
+
+/*end Social Media Stats*/
+/*start Projects*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+@media (max-width: 780px) {
+  table {
+    overflow-y: scroll;
+    display: block;
+  }
+}
+
+.projects {
+  grid-column: span 2;
+}
+@media (max-width: 780px) {
+  .projects {
+    grid-column: span 1;
+  }
+}
+.projects tr:hover {
+  background-color: hsla(0, 0%, 93%, 0.3);
+  cursor: auto;
+}
+.projects th {
+  text-align: left;
+}
+.projects td {
+  text-align: left;
+}
+@media (max-width: 1028px) {
+  .projects td {
+    font-size: 14px;
+    padding-right: 80px;
+  }
+}
+
+.image-avatar {
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+.image-avatar img {
+  width: 90%;
+  height: 90%;
+  border: 3px solid white;
+}
+
+.user2,
+.user3,
+.user4,
+.user5,
+.user6 {
+  position: absolute;
+}
+
+.user2,
+.user5 {
+  left: 15px;
+}
+
+.user3 {
+  left: 30px;
+}
+
+.user4 {
+  left: 44px;
+}
+
+.user6 {
+  left: 59px;
+}
+
+/*end Projects*//*# sourceMappingURL=dashboard.css.map */
